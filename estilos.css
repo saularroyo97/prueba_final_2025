@@ -1,0 +1,181 @@
+ /* Estilos generales */
+        body {
+            margin: 0;
+            font-family: system-ui, -apple-system, sans-serif;
+            background: white;
+        }
+
+        /* Contenedor principal */
+        .main-container {
+            background: white;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .content-wrapper {
+            background: white;
+            width: 100%;
+            max-width: 1440px;
+            position: relative;
+        }
+
+        /* Header */
+        .header-bg {
+            width: 100%;
+            height: 58px;
+            background-image: url(/captura-de-pantalla-2025-04-08-a-la-s--2-19-29-p-m--1.png);
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* Sección Hero */
+        .hero-section {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            max-width: 1216px;
+            margin: 118px auto 0;
+            padding: 0 28px;
+        }
+
+        .hero-content {
+            position: relative;
+            width: 100%;
+            height: 338px;
+        }
+
+        .bot-header-img {
+            position: absolute;
+            width: 611px;
+            height: 221px;
+            top: 58px;
+            right: 0;
+            object-fit: cover;
+        }
+
+        .hero-text {
+            position: absolute;
+            width: 596px;
+            height: 338px;
+            top: 0;
+            left: 0;
+        }
+
+        .hero-title {
+            font-weight: 700;
+            color: #1e2248;
+            font-size: 40px;
+            line-height: normal;
+            margin-bottom: 32px;
+        }
+
+        .hero-description {
+            color: #1e2248;
+            font-size: 20px;
+            line-height: 24px;
+            margin-bottom: 32px;
+            max-width: 548px;
+        }
+
+        /* Botón y enlace */
+        .button-group {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .custom-button {
+            height: 70px;
+            background: #007fd0;
+            border-radius: 20px;
+            padding: 0 24px;
+            border: none;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .custom-button:hover {
+            background: #0069b0;
+        }
+
+        .button-text {
+            font-weight: 700;
+            color: white;
+            font-size: 34.6px;
+            line-height: 39.6px;
+        }
+
+        .solution-link {
+            color: #005eeb;
+            font-size: 15.9px;
+            line-height: 22.4px;
+            text-decoration: none;
+        }
+
+        .solution-link:hover {
+            text-decoration: underline;
+        }
+
+        /* Tarjetas de características */
+        .features-section {
+            display: flex;
+            gap: 39px;
+            width: 100%;
+        }
+
+        .feature-card {
+            flex: 1;
+            border: none;
+            box-shadow: none;
+        }
+
+        .card-image {
+            width: 100%;
+            height: 300px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .card-title {
+            font-weight: 700;
+            color: #1e2248;
+            font-size: 24px;
+            line-height: 33.6px;
+            height: 100px;
+        }
+
+        .card-description {
+            color: #1e2248;
+            font-size: 16px;
+            line-height: 22.4px;
+            min-height: 87px;
+        }
+
+        /* Sección de logos */
+        .client-logos {
+            width: 100%;
+            padding: 10px;
+        }
+
+        .client-logos img {
+            width: 100%;
+            height: 377.07px;
+            object-fit: cover;
+        }
+
+        /* Value proposition */
+        .value-proposition {
+            width: 100%;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .value-text {
+            color: #1e2248;
+            font-size: 45px;
+            font-weight: 700;
+            line-height: normal;
+            max-width: 1142px;
+            margin: 0 auto;
+        }
