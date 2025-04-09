@@ -16,17 +16,57 @@ body {
     justify-content: center;
     align-items: center;
     padding-bottom: 100px;
+    z-index: 10;
 }
+
+
+.tab-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+    position: sticky;
+    top: 80px;
+    z-index: 999;
+    padding: 15px 0;
+}
+
+.tab-button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    color: #666;
+}
+
+.tab-button.active {
+    background: #007BFF;
+    color: white;
+    transform: scale(1.05);
+}
+
+.tab-content {
+    display: none;
+    padding: 40px 20px;
+    animation: fadeIn 0.5s ease;
+}
+
+.tab-content.active {
+    display: block;
+}
+
 /* Contenedor principal */
 .main-container {
     background: white;
     display: flex;
     justify-content: center;
     width: 100%;
+    margin-top: 80px; /* Evita que el contenido se superponga con el header fijo */
 }
 
 .content-wrapper {
-   
     width: 100%;
     max-width: 1440px;
     position: relative;
@@ -45,7 +85,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding:100px 20px 60px;
+    padding:80px 20px 60px;
     max-width: 1216px;
     margin: 0 auto;
     gap: 60px;
@@ -285,9 +325,6 @@ body {
 }
 
 
-
-
-
 /* Responsive estilo Simbla */
 @media (max-width: 1024px) {
     .hero-title {
@@ -353,36 +390,19 @@ body {
     }
     .sales-funnel-section {
         padding: 40px 20px;
-        margin-top: 40px;
     }
-    
-    .sales-funnel-image img {
-        max-width: 100%;
-        border-radius: 8px;
-    }
-    
-    .sales-funnel-title {
+}
+
+@media (max-width: 480px) {
+    .hero-title {
         font-size: 28px;
-        margin-bottom: 15px;
     }
     
-    .sales-funnel-description {
+    .hero-description {
         font-size: 16px;
-        margin-bottom: 25px;
     }
     
-    .learn-more-link {
-        width: 100%;
-        text-align: center;
-        padding: 12px;
-    }
-    .footer-bg {
-        height: 60px;
-        padding-top: 80px;
-    }
-    
-    .footer-icon {
-        width: 30px;
-        height: 30px;
+    .value-text {
+        font-size: 24px;
     }
 }
