@@ -1,181 +1,388 @@
- /* Estilos generales */
-        body {
-            margin: 0;
-            font-family: system-ui, -apple-system, sans-serif;
-            background: white;
-        }
+/* Estilos generales */
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, sans-serif;
+    background: white;
+    padding-bottom: 80px;
+}
 
-        /* Contenedor principal */
-        .main-container {
-            background: white;
-            display: flex;
-            justify-content: center;
-            width: 100%;
-        }
+.header-bg{
+    position: fixed; 
+    width: 100vw; 
+    height: 80px;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+}
+/* Contenedor principal */
+.main-container {
+    background: white;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
 
-        .content-wrapper {
-            background: white;
-            width: 100%;
-            max-width: 1440px;
-            position: relative;
-        }
+.content-wrapper {
+   
+    width: 100%;
+    max-width: 1440px;
+    position: relative;
+}
 
-        /* Header */
-        .header-bg {
-            width: 100%;
-            height: 58px;
-            background-image: url(/captura-de-pantalla-2025-04-08-a-la-s--2-19-29-p-m--1.png);
-            background-size: cover;
-            background-position: center;
-        }
+/* Header */
+.header-bg {
+    width: 100%;
+    height: 58px;
+    background-size: cover;
+    background-position: center;
+}
 
-        /* Sección Hero */
-        .hero-section {
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-            max-width: 1216px;
-            margin: 118px auto 0;
-            padding: 0 28px;
-        }
+/* Hero estilo Simbla */
+.hero-simbla {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:100px 20px 60px;
+    max-width: 1216px;
+    margin: 0 auto;
+    gap: 60px;
+    flex-wrap: wrap;
+}
 
-        .hero-content {
-            position: relative;
-            width: 100%;
-            height: 338px;
-        }
+.hero-left {
+    flex: 1;
+    min-width: 300px;
+}
 
-        .bot-header-img {
-            position: absolute;
-            width: 611px;
-            height: 221px;
-            top: 58px;
-            right: 0;
-            object-fit: cover;
-        }
+.hero-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    min-width: 300px;
+}
 
-        .hero-text {
-            position: absolute;
-            width: 596px;
-            height: 338px;
-            top: 0;
-            left: 0;
-        }
+.hero-right img {
+    width: 100%;
+    max-width: 550px;
+    height: auto;
+    object-fit: contain;
+}
 
-        .hero-title {
-            font-weight: 700;
-            color: #1e2248;
-            font-size: 40px;
-            line-height: normal;
-            margin-bottom: 32px;
-        }
+.hero-title {
+    font-weight: 700;
+    color: #1e2248;
+    font-size: 40px;
+    line-height: normal;
+    margin-bottom: 32px;
+}
 
-        .hero-description {
-            color: #1e2248;
-            font-size: 20px;
-            line-height: 24px;
-            margin-bottom: 32px;
-            max-width: 548px;
-        }
+.hero-description {
+    color: #1e2248;
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 32px;
+    max-width: 548px;
+}
 
-        /* Botón y enlace */
-        .button-group {
-            display: flex;
-            align-items: center;
-            gap: 20px;
-        }
+.button-group {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
 
-        .custom-button {
-            height: 70px;
-            background: #007fd0;
-            border-radius: 20px;
-            padding: 0 24px;
-            border: none;
-            cursor: pointer;
-            transition: background 0.3s;
-        }
+.custom-button {
+    background: #007fd0;
+    border-radius: 20px;
+    padding: 0 24px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
 
-        .custom-button:hover {
-            background: #0069b0;
-        }
+.custom-button:hover {
+    background: #0069b0;
+}
 
-        .button-text {
-            font-weight: 700;
-            color: white;
-            font-size: 34.6px;
-            line-height: 39.6px;
-        }
+.button-text {
+    font-weight: 700;
+    color: white;
+    font-size: 16px;
+    line-height: 39.6px;
+}
 
-        .solution-link {
-            color: #005eeb;
-            font-size: 15.9px;
-            line-height: 22.4px;
-            text-decoration: none;
-        }
+.solution-link {
+    color: #005eeb;
+    font-size: 15.9px;
+    line-height: 22.4px;
+    text-decoration: none;
+}
 
-        .solution-link:hover {
-            text-decoration: underline;
-        }
+.solution-link:hover {
+    text-decoration: underline;
+}
 
-        /* Tarjetas de características */
-        .features-section {
-            display: flex;
-            gap: 39px;
-            width: 100%;
-        }
+/* Sección de logos */
+.client-logos {
+    width: 100%;
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
-        .feature-card {
-            flex: 1;
-            border: none;
-            box-shadow: none;
-        }
+.content-wrapper {
+    max-width: 1142px;
+    margin: 0 auto 40px;
+    text-align: center;
+}
 
-        .card-image {
-            width: 100%;
-            height: 300px;
-            background-size: cover;
-            background-position: center;
-        }
+.client-title {
+    color: #1e2248;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
 
-        .card-title {
-            font-weight: 700;
-            color: #1e2248;
-            font-size: 24px;
-            line-height: 33.6px;
-            height: 100px;
-        }
+.client-description {
+    color: #1e2248;
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 0 auto;
+}
 
-        .card-description {
-            color: #1e2248;
-            font-size: 16px;
-            line-height: 22.4px;
-            min-height: 87px;
-        }
+.image-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-radius: 12px;
+    overflow: hidden;
+}
 
-        /* Sección de logos */
-        .client-logos {
-            width: 100%;
-            padding: 10px;
-        }
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
 
-        .client-logos img {
-            width: 100%;
-            height: 377.07px;
-            object-fit: cover;
-        }
+/* Value proposition */
+.value-proposition {
+    width: 100%;
+    padding:100px 20px 60px;
+    text-align: center;
+}
 
-        /* Value proposition */
-        .value-proposition {
-            width: 100%;
-            padding: 10px;
-            text-align: center;
-        }
+.value-text {
+    color: #1e2248;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: normal;
+    max-width: 1142px;
+    margin: 0 auto;
+}
 
-        .value-text {
-            color: #1e2248;
-            font-size: 45px;
-            font-weight: 700;
-            line-height: normal;
-            max-width: 1142px;
-            margin: 0 auto;
-        }
+/* Tarjetas de características */
+.features-section {
+    display: flex;
+    gap: 39px;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 60px 20px;
+}
+
+.feature-card {
+    flex: 1;
+    max-width: 360px;
+    border: none;
+    box-shadow: none;
+    text-align: left;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.card-title {
+    font-weight: 700;
+    color: #1e2248;
+    font-size: 24px;
+    line-height: 33.6px;
+    height: 100px;
+    margin-top: 16px;
+}
+
+.card-description {
+    color: #1e2248;
+    font-size: 16px;
+    line-height: 22.4px;
+    min-height: 87px;
+    margin-bottom: 10px;
+}
+
+.sales-funnel-section {
+    width: 100%;
+    background-color: #f7f7f7;
+    padding: 50px 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.sales-funnel-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+}
+
+.sales-funnel-image img {
+    max-width: 450px;
+    height: auto;
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+.sales-funnel-text {
+    max-width: 500px;
+    text-align: left;
+}
+
+.sales-funnel-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #1e2248;
+    margin-bottom: 20px;
+}
+
+.sales-funnel-description {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.learn-more-link {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    color: #007fd0;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #f0f8ff;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+
+.learn-more-link:hover {
+    background-color: #e0f0ff;
+    text-decoration: underline;
+}
+
+
+
+
+
+/* Responsive estilo Simbla */
+@media (max-width: 1024px) {
+    .hero-title {
+        font-size: 36px;
+    }
+    
+    .value-text {
+        font-size: 28px;
+    }
+    
+    .features-section {
+        gap: 30px;
+    }
+    
+    .sales-funnel-section {
+        padding: 40px 20px;
+    }
+    
+    .sales-funnel-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .sales-funnel-text {
+        max-width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-simbla {
+        flex-direction: column-reverse;
+        padding: 60px 20px;
+        text-align: center;
+    }
+
+    .hero-left,
+    .hero-right {
+        flex: none;
+        width: 100%;
+    }
+
+    .hero-title {
+        font-size: 32px;
+    }
+
+    .hero-description {
+        font-size: 18px;
+    }
+
+    .button-group {
+        justify-content: center;
+    }
+
+    .custom-button {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .features-section {
+        flex-direction: column;
+        align-items: center;
+    }
+    .sales-funnel-section {
+        padding: 40px 20px;
+        margin-top: 40px;
+    }
+    
+    .sales-funnel-image img {
+        max-width: 100%;
+        border-radius: 8px;
+    }
+    
+    .sales-funnel-title {
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+    
+    .sales-funnel-description {
+        font-size: 16px;
+        margin-bottom: 25px;
+    }
+    
+    .learn-more-link {
+        width: 100%;
+        text-align: center;
+        padding: 12px;
+    }
+    .footer-bg {
+        height: 60px;
+        padding-top: 80px;
+    }
+    
+    .footer-icon {
+        width: 30px;
+        height: 30px;
+    }
+}
